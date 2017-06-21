@@ -1,0 +1,194 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#424242">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="10px"
+                android:layout_weight="0.5"
+                android:background="#66ffa6">
+
+                <Button
+                    android:id="@+id/layout_today"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center|bottom"
+                    android:paddingBottom="10dp"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:src="@drawable/day4" />
+
+                <TextView
+                    android:id="@+id/today"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#00b248"
+                    android:gravity="center"
+                    android:text="Today"
+                    android:textColor="#FFFFFF"
+                    android:textSize="40px"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="10px"
+                android:layout_marginTop="10px"
+                android:layout_weight="0.5"
+                android:background="#ffbcaf">
+
+                <Button
+                    android:id="@+id/layout_nextweek"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@null"
+                    android:gravity="center|bottom"
+                    android:paddingBottom="10dp"
+                    android:textColorHighlight="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:src="@drawable/week" />
+
+                <TextView
+                    android:id="@+id/nextweek"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#c85a54"
+                    android:gravity="center"
+                    android:text="Next Week"
+                    android:textColor="#FFFFFF"
+                    android:textSize="40px"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px"
+                android:layout_weight="0.5"
+                android:background="#ffffa8">
+
+                <Button
+                    android:id="@+id/layout_later"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center|bottom"
+                    android:paddingBottom="10dp"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:src="@drawable/later1" />
+
+                <TextView
+                    android:id="@+id/later"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#cabf45"
+                    android:gravity="center"
+                    android:text="Later"
+                    android:textColor="#FFFFFF"
+                    android:textSize="40px"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="10px"
+                android:layout_marginTop="5px"
+                android:layout_weight="0.5"
+                android:background="#75a7ff">
+
+                <Button
+                    android:id="@+id/layout_range"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center|bottom"
+                    android:paddingBottom="10dp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/range"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#2286c3"
+                    android:gravity="center"
+                    android:text="Range"
+                    android:textColor="#FFFFFF"
+                    android:textSize="40px"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:src="@drawable/range2" />
+
+            </RelativeLayout>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

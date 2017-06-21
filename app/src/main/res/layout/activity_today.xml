@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F8E9">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Select City"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="30dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinner_border">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City : "
+                    android:paddingLeft="10dp"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+                <Spinner
+                    android:id="@+id/today_city"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#fff"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="#00b248"/>
+
+
+                    <TableRow
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/today_bookingnumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:text="Booking Number"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=":"
+                            android:textAlignment="textStart"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/today_bookingnumber_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="18dp" />
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/today_booking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:text="Booking Time"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=":"
+                            android:textAlignment="textStart"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/today_booking_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="18dp" />
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/today_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:text="User Name"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=":"
+                            android:textAlignment="textStart"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/today_username_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="18dp" />
+
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/today_contactnumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:text="Contact Number"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=":"
+                            android:textAlignment="textStart"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/today_contactnumber_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="18dp" />
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/today_vehicle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:text="Vehicle"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=":"
+                            android:textAlignment="textStart"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/today_vehicle_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="18dp" />
+
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/today_pickup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:text="Pickup Date &amp; Time"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=":"
+                            android:textAlignment="textStart"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/today_pickup_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="18dp" />
+
+                    </TableRow>
+
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="#00b248" />
+                </TableLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
